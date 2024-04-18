@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        text-align: center; /* Center align content */
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .button {
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #2059DC;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: #1a4aaf;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <h2>General Folder</h2>
+        <button class="button" onclick="window.location.href='https://1drv.ms/f/s!Apm_0qGwLhMFmyjdY-l4Zy3uxkx4?e=sZNXIo'">Folder Form</button>
+        <button class="button" onclick="window.location.href='https://1drv.ms/f/s!Apm_0qGwLhMFmypBoyejyPIOZt9m?e=aAodBA'">Onboarding Documents</button>
+        <button class="button" onclick="window.location.href='https://1drv.ms/f/s!Apm_0qGwLhMFmytevLpnhe-qniz7?e=eawLoa'">Careplan</button>
+    </div>
+    <div class="section">
+        <h2>Amadeus Care Team</h2>
+        <button class="button" onclick="loginAndRedirect('Eugene', 'Eugene1234*', 'https://1drv.ms/f/s!Apm_0qGwLhMFmkKzYXW_gu6X8W39?e=lHyols')">Eugene Chua</button>
+        <button class="button" onclick="loginAndRedirect('Renate', 'Renate1234*', 'https://1drv.ms/f/s!Apm_0qGwLhMFiwIu0lewttckTIuI?e=dWcAd0')">Renate Carnat</button>
+        <button class="button" onclick="loginAndRedirect('Maureen', 'Maureen1234*', 'https://1drv.ms/f/s!Apm_0qGwLhMFiwRTdi2db1xt4Vwv?e=53FiGH')">Maureen Sell</button>
+        <button class="button" onclick="loginAndRedirect('Timothy', 'Timothy1234*', 'https://1drv.ms/f/s!Apm_0qGwLhMFmyYu9dq4VB7FXP9K?e=UHQqZr')">Timothy Liang</button>
+        <button class="button" onclick="loginAndRedirect('Jackie', 'Jackie1234*', 'https://1drv.ms/f/s!Apm_0qGwLhMFiwUDqAxTSDwNaTX1?e=2bJCHp')">Jackie Pan</button>
+    </div>
+</div>
+
+<script>
+function loginAndRedirect(username, password, redirectUrl) {
+    var enteredUsername = prompt("Please enter your username:");
+    var enteredPassword = prompt("Please enter your password:");
+
+    if (enteredUsername === username && enteredPassword === password) {
+        window.location.href = redirectUrl;
+    } else {
+        alert("Incorrect username or password. Please try again.");
+    }
+}
+</script>
+
+</body>
+</html>
